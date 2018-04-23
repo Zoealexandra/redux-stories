@@ -1,9 +1,22 @@
 import React from 'react'
+import {connect} from 'react-redux'
 
-const Image = (props) => (
+import Image from './image'
+
+const Images = ({images}) => (
   <div>
-    <img src={props.imageUrl}/>
+    {images.map(image =>
+      <Image key={image.id}
+        {...image}
+      />
+    )}
   </div>
 )
 
-export default Image
+const mapStateToProps = (state) => {
+  return {
+    images: state.images
+  }
+}
+
+export default connect(mapStateToProps)(Images)
