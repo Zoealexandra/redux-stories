@@ -1,11 +1,19 @@
-const images = (state = [], action) => {
+
+const initialState = [
+  {
+    id: 0,
+    image: 'http://placekitten.com/200/300'
+  }
+]
+
+const images = (state = initialState, action) => {
   switch (action.type) {
     case 'ADD_IMAGE':
       return [
         ...state,
         {
           id: action.id,
-          image: action.imageUrl
+          image: action.image
         }
       ]
     default:

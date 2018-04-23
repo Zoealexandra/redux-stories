@@ -2,7 +2,7 @@ import React from 'react'
 
 const Image = (props) => (
   <div>
-    <img src={props.imageUrl}/>
+    <img src={props.image}/>
   </div>
 )
 

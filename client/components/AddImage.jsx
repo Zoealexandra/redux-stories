@@ -1,6 +1,6 @@
 import React from 'react'
 import {connect} from 'react-redux'
-import {addImage} from './actions'
+import {addImage} from '../actions'
 
 function submitImageUrl (e, dispatch) {
   if (e.keyCode === 13) {

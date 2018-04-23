@@ -1,7 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 
-import Image from './image'
+import Image from './Image'
 
 const Images = ({images}) => (
   <div>

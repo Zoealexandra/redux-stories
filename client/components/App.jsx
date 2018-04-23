@@ -9,6 +9,7 @@ const App = () => (
   <div className='app-container'>
     <Words />
     <AddWord />
+    <br/>
     <AddImage />
     <Images />
   </div>
