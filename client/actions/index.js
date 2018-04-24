@@ -31,3 +31,10 @@ export const deleteImage = (imageURL) => {
     image: imageURL
   }
 }
+
+export const letterFilter = (letter) => {
+  return {
+    type: 'FILTER',
+    letter
+  }
+}

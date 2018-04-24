@@ -14,10 +14,4 @@ const Word = (props) => (
   </div>
 )
 
-/* const mapDispatchToProps = (state) => {
-  return {
-    words: state.words
-  }
-} */
-
 export default connect()(Word)

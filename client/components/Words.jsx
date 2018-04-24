@@ -2,6 +2,7 @@ import React from 'react'
 import {connect} from 'react-redux'
 
 import Word from './Word'
+import WordSearch from './WordSearch'
 
 const Words = ({words}) => (
   <div>
@@ -10,6 +11,7 @@ const Words = ({words}) => (
         {...word}
       />
     )}
+    <WordSearch />
   </div>
 )
 
