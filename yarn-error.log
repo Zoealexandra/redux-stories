@@ -4770,7 +4770,7 @@ Lockfile:
 
 Trace: 
   Error: Command failed.
-  Exit signal: SIGHUP
+  Exit code: 2
   Command: sh
   Arguments: -c webpack && node server
   Directory: /home/student/workspace/redux-practice

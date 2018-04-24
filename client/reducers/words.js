@@ -1,4 +1,11 @@
-const words = (state = [], action) => {
+const initialWordState = [
+  {
+    id: 0,
+    word: 'Pickles'
+  }
+]
+
+const words = (state = initialWordState, action) => {
   switch (action.type) {
     case 'ADD_WORD':
       return [
@@ -8,7 +15,8 @@ const words = (state = [], action) => {
           word: action.word
         }
       ]
-
+    case 'DEL_WORD':
+      return state.words.filter((word) => word !== action.word)
     default:
       return state
   }
