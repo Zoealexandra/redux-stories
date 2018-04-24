@@ -38,3 +38,10 @@ export const letterFilter = (letter) => {
     letter
   }
 }
+
+export const addDescription = (description) => {
+  return {
+    type: 'ADD_DESCRIPTION',
+    description
+  }
+}

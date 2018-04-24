@@ -18,6 +18,12 @@ const images = (state = initialState, action) => {
       ]
     case 'DEL_IMAGE':
       return state.filter(image => image.image !== action.image)
+    case 'ADD_DESCRIPTION':
+      return state.map(image => {
+        const newState = Object.assign(image, {})
+        newState.description = action.description
+        return newState
+      })
     default:
       return state
   }
