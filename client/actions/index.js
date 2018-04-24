@@ -24,3 +24,10 @@ export const deleteWord = (word) => {
     word
   }
 }
+
+export const deleteImage = (imageURL) => {
+  return {
+    type: 'DEL_IMAGE',
+    image: imageURL
+  }
+}

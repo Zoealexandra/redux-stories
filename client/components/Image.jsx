@@ -1,4 +1,9 @@
 import React from 'react'
+import {deleteImage} from '../actions'
+
+function deleteButton (image, dispatch) {
+  dispatch(deleteImage(image))
+}
 
 const Image = (props) => (
   <div>
