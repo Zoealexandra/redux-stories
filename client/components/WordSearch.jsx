@@ -10,14 +10,17 @@ function filter (e, dispatch) {
 }
 
 const WordSearch = (props) => (
-  <input
-    placeholder='Enter a letter to filter by'
-    onKeyUp={e => {
-      // the connect() call below puts
-      // dispatch directly on props
-      filter(e, props.dispatch)
-    }}
-  />
+  <div>
+    Filter your words:
+    <input
+      placeholder='Enter a letter to filter by'
+      onKeyUp={e => {
+        // the connect() call below puts
+        // dispatch directly on props
+        filter(e, props.dispatch)
+      }}
+    />
+  </div>
 )
 
 export default connect()(WordSearch)
