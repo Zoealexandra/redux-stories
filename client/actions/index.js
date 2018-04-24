@@ -45,3 +45,10 @@ export const addDescription = (description) => {
     description
   }
 }
+
+export const addTag = (tag) => {
+  return {
+    type: 'ADD_TAG',
+    tag
+  }
+}

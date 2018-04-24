@@ -2,7 +2,10 @@
 const initialState = [
   {
     id: 0,
-    image: 'http://placekitten.com/200/300'
+    image: 'http://placekitten.com/200/300',
+    description: '',
+    tag: []
+
   }
 ]
 
@@ -19,11 +22,9 @@ const images = (state = initialState, action) => {
     case 'DEL_IMAGE':
       return state.filter(image => image.image !== action.image)
     case 'ADD_DESCRIPTION':
-      return state.map(image => {
-        const newState = Object.assign(image, {})
-        newState.description = action.description
-        return newState
-      })
+      return state.map(image => image)
+    case 'ADD_TAG':
+      return state.map(image => image.tag.push(action.tag))
     default:
       return state
   }
