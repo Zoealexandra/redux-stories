@@ -1,4 +1,5 @@
 import React from 'react'
+import {connect} from 'react-redux'
 import {deleteImage} from '../actions'
 
 function deleteButton (image, dispatch) {
@@ -9,9 +10,9 @@ const Image = (props) => (
   <div>
     <img src={props.image}/>
     <p><button onClick={() => {
-      deleteButton(props.word, props.dispatch)
+      deleteButton(props.image, props.dispatch)
     }}>DEL</button></p>
   </div>
 )
 
-export default Image
+export default connect()(Image)

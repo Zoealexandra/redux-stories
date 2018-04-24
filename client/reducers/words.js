@@ -23,8 +23,3 @@ const words = (state = initialWordState, action) => {
 }
 
 export default words
-
-/* {
-  type: 'DEL_WORD',
-  word: 'goose'
-  } */

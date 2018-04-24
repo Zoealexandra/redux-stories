@@ -16,6 +16,8 @@ const images = (state = initialState, action) => {
           image: action.image
         }
       ]
+    case 'DEL_IMAGE':
+      return state.filter(image => image.image !== action.image)
     default:
       return state
   }
