@@ -16,10 +16,15 @@ const words = (state = initialWordState, action) => {
         }
       ]
     case 'DEL_WORD':
-      return state.words.filter((word) => word !== action.word)
+      return state.filter(word => word.word !== action.word)
     default:
       return state
   }
 }
 
 export default words
+
+/* {
+  type: 'DEL_WORD',
+  word: 'goose'
+  } */

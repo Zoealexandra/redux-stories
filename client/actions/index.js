@@ -1,4 +1,4 @@
-let nextWordId = 1 
+let nextWordId = 1
 
 export const addWord = (word) => {
   return {
